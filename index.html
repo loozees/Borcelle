@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Borcelle</title>
-<meta charset="UTF-8">
-<meta name="viewport">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Zeyada">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Borcelle</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> <!-- Aquí podemos referenciar al logo que se ve a la izquierda en la pestaña de los navegadores -->
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <link rel="stylesheet" href="style.css"> <!-- Esta es la hoja de estilos que estaremos utilizando para esta página -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Zeyada"> <!-- Esta es la referencia que se utiliza para "llamar" a Google cuando queremos usar fuentes. Poppins es una fuente de Google, pero Amsterdam no, por lo que busqué una parecida o por lo menos con estilo similar en el catálogo de Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Esta es la referencia que se utiliza para que podamos incluir íconos de FontAwesome en nuestras páginas. Tienen un código especial por cada ícono que, al utilizar en el código de la página teniendo esta referencia en el head, los importa directamente de FontAwesome y no tenemos que andar trayendo logos de internet para nuestras carpetas IMG -->
 </head>
-<body>
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="sidebar bar-block">
-  <!-- Avatar image in top left corner -->
-  <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#header" class="bar-item button">
-    <i class="fa fa-home"></i>
-    <p>INICIO</p>
-  </a>
-  <a href="#nosotros" class="bar-item button">
-    <i class="fa fa-user"></i>
-    <p>NOSOTROS</p>
-  </a>
-  <a href="#reserva" class="bar-item button">
-    <i class="fa fa-envelope"></i>
-    <p>RESERVÁ</p>
-  </a>
-</nav>
-
-<!-- Page Content -->
-<header id="header"></header>
-
-<!-- About Container -->
-<div id="nosotros">
-  <div class="contenido">
-    <h5>Nosotros</h5>
-    <p>Bienvenidos a nuestra pastelería, en donde la tradición y la innovación se unen para crear las delicias más dulces. Nuestras tortas están hechas con ingredientes frescos y de primera calidad, cuidadosamente elaboradas por nuestros maestros pasteleros.</p>
-    <p>Ofrecemos una amplia variedad de tortas, desde las de cumpleaños hasta las más creativas y originales. También ofrecemos cupcakes, galletas, brownies y más. Todos hechos con amor y pasión. Vení a visitarnos y descubrí por qué somos la mejor pastelería. ¡Te esperamos!</p>
-    <img src="https://www.w3schools.com/w3images/coffeeshop.jpg">
-    <p><strong>Horario:</strong> Martes a Domingo de 10 a 20hs.</p>
-    <p><strong>Dirección:</strong> Avenida Pastelera 1245, CABA</p>
-  </div>
-</div>
-<!-- Contact/Area Container -->
-<div id="reserva">
-  <div class="contenido">
-    <h5>Reservá</h5>
-    <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg">
-    <form action="/action_page.php" target="_blank">
-      <p><input type="text" placeholder="Tu nombre" required name="Name"></p>
-      <p><input type="number" placeholder="¿Cuántos van a ser?" required name="People"></p>
-      <p><input type="datetime-local" placeholder="Día y hora" required name="date" value="2023-11-16T20:00"></p>
-      <p><input type="text" placeholder="¿Algún mensaje o pedido especial?" required name="Message"></p>
-      <p><button class="button" type="submit">Reservá</button></p>
-    </form>
-  </div>
-</div>
-<!-- Footer -->
-<footer>
-  <a href="http://www.twitter.com" class="fa fa-twitter fa-fw"></a>
-  <a href="http://www.facebook.com" class="fa fa-facebook fa-fw"></a>
-  <a href="http://www.instagram.com" class="fa fa-instagram fa-fw"></a>
-  <a href="http:web.whatsapp.com" class="fa fa-whatsapp fa-fw"></a>
-</footer>
-</body>
+  <body> <!-- El indenting es importante para poder ver las jerarquías de cada grupo de etiquetas. -->
+  <!-- ¿Por qué está el NAV arriba del HEADER? Generalmente, las páginas web van cargando según el orden del código, y mi intención era que el NAV cargara y se posicionara primero también en pantallas pequeñas, por lo que coloqué el código primero en BODY. -->
+    <nav class="sidebar"> <!-- Esta sidebar nos lleva a todas las partes dentro de la misma página que vemos mendiante la referencia #. Si es dentro de una misma página no necesitamos colocar links, usamos la referencia A y el # al nombre de referencia que le hayamos dado a la sección. -->
+      <img src="img/logocolor.png" style="width:100%"> <!-- Aquí es donde coloco el logo del comercio. Si la carpeta IMG estuviera dentro de otra carpeta/s tendría que colocar /.../ por cada número de carpetas. -->
+      <a href="#header" class="button">
+        <i class="fa fa-home"></i> <!-- Esta es la referencia a FontAwesome. Colocar fa-home nos da el logo de la casita, sin tener que ponerlo nosotros en nuestras carpetas. -->
+        <p>INICIO</p>
+      </a>
+      <a href="#nosotros" class="button">
+        <i class="fa fa-user"></i>
+        <p>NOSOTROS</p>
+      </a>
+      <a href="#reserva" class="button">
+        <i class="fa fa-envelope"></i>
+        <p>RESERVÁ</p>
+      </a>
+    </nav>
+    <!-- ¿Y el contenido del HEADER? En mi caso, todo el contenido está en el CSS bajo la propiedad HEADER, incluyendo la imagen. Únicamente coloqué esta línea de código para que se pueda llevar a cabo la referencia en el NAV.  -->
+    <header id="header"></header>
+    <!-- Este es el contenido de texto, la parte principal de mi página. Creé la class CONTENIDO principalmente para poder manejar mejor el PADDING y los porcentajes. -->
+    <div id="nosotros"> <!-- Referencia para el NAV. De no estar el NAV, podría haber saltado directamente al contenido. -->
+      <div class="contenido">
+        <h5>Nosotros</h5> <!-- La fuente que elegí de reemplazo de Amsterdam tiene mucho padding naturalmente y eso no me agrada, pero era la más linda y parecida... -->
+        <p>Bienvenidos a nuestra pastelería, en donde la tradición y la innovación se unen para crear las delicias más dulces. Nuestras tortas están hechas con ingredientes frescos y de primera calidad, cuidadosamente elaboradas por nuestros maestros pasteleros.</p>
+        <p>Ofrecemos una amplia variedad de tortas, desde las de cumpleaños hasta las más creativas y originales. También ofrecemos cupcakes, galletas, brownies y más. Todos hechos con amor y pasión. Vení a visitarnos y descubrí por qué somos la mejor pastelería. ¡Te esperamos!</p>
+        <img src="img/contenido1.jpg">
+        <p><strong>Horario:</strong> Martes a Domingo de 10 a 20hs.</p> <!-- Pensé en usar una clase para el STRONG, pero iba a ser demasiado, cuando la etiqueta esta hace un excelente trabajo. -->
+        <p><strong>Dirección:</strong> Avenida Pastelera 1245, CABA</p>
+      </div>
+    </div>
+    <div id="reserva"> <!-- Referencia para el NAV. -->
+      <div class="contenido">
+        <h5>Reservá</h5>
+        <img src="img/contenido2.jpg">
+        <form action="/action_page.php" target="_blank"> <!-- No hay un form o archivo php real, pero quería que se sintiera como un formulario verdadero. -->
+          <p><input type="text" placeholder="Tu nombre" required name="Name"></p> <!-- La clase INPUT en el CSS es la que le da el look a los campos del form. -->
+          <p><input type="number" placeholder="¿Cuántos van a ser?" required name="People"></p>
+          <p><input type="datetime-local" placeholder="Día y hora" required name="date" value="2023-11-16T20:00"></p>
+          <p><input type="text" placeholder="¿Algún mensaje o pedido especial?" required name="Message"></p>
+          <p><button class="button" type="submit">Reservá</button></p> <!-- Usé la misma clase BUTTON del NAV, pero hizo que tuviera que sacrificar varias cuestiones estéticas en ambos. Siento que hubiera sido mejor crear dos clases distintas. -->
+        </form>
+      </div>
+    </div>
+    <footer> <!-- No soy fan de los FOOTER pero siempre vienen bien para los logos de redes sociales, que aquí están referenciando URLs genéricas. Además, noté que no había utilizado el gris de la paleta en ningún lado así que me vino bien integrarlo en la clase FOOTER. -->
+      <a href="http://www.twitter.com" class="fa fa-twitter fa-fw"></a>
+      <a href="http://www.facebook.com" class="fa fa-facebook fa-fw"></a>
+      <a href="http://www.instagram.com" class="fa fa-instagram fa-fw"></a>
+      <a href="http://web.whatsapp.com" class="fa fa-whatsapp fa-fw"></a>
+    </footer>
+  </body>
 </html>

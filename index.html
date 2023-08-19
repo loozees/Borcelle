@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Borcelle</title>
+<meta charset="UTF-8">
+<meta name="viewport">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Zeyada">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block">
+  <!-- Avatar image in top left corner -->
+  <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#header" class="bar-item button">
+    <i class="fa fa-home"></i>
+    <p>INICIO</p>
+  </a>
+  <a href="#nosotros" class="bar-item button">
+    <i class="fa fa-user"></i>
+    <p>NOSOTROS</p>
+  </a>
+  <a href="#reserva" class="bar-item button">
+    <i class="fa fa-envelope"></i>
+    <p>RESERVÁ</p>
+  </a>
+</nav>
+
+<!-- Page Content -->
+<header id="header"></header>
+
+<!-- About Container -->
+<div id="nosotros">
+  <div class="contenido">
+    <h5>Nosotros</h5>
+    <p>Bienvenidos a nuestra pastelería, en donde la tradición y la innovación se unen para crear las delicias más dulces. Nuestras tortas están hechas con ingredientes frescos y de primera calidad, cuidadosamente elaboradas por nuestros maestros pasteleros.</p>
+    <p>Ofrecemos una amplia variedad de tortas, desde las de cumpleaños hasta las más creativas y originales. También ofrecemos cupcakes, galletas, brownies y más. Todos hechos con amor y pasión. Vení a visitarnos y descubrí por qué somos la mejor pastelería. ¡Te esperamos!</p>
+    <img src="https://www.w3schools.com/w3images/coffeeshop.jpg">
+    <p><strong>Horario:</strong> Martes a Domingo de 10 a 20hs.</p>
+    <p><strong>Dirección:</strong> Avenida Pastelera 1245, CABA</p>
+  </div>
+</div>
+<!-- Contact/Area Container -->
+<div id="reserva">
+  <div class="contenido">
+    <h5>Reservá</h5>
+    <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg">
+    <form action="/action_page.php" target="_blank">
+      <p><input type="text" placeholder="Tu nombre" required name="Name"></p>
+      <p><input type="number" placeholder="¿Cuántos van a ser?" required name="People"></p>
+      <p><input type="datetime-local" placeholder="Día y hora" required name="date" value="2023-11-16T20:00"></p>
+      <p><input type="text" placeholder="¿Algún mensaje o pedido especial?" required name="Message"></p>
+      <p><button class="button" type="submit">Reservá</button></p>
+    </form>
+  </div>
+</div>
+<!-- Footer -->
+<footer>
+  <a href="http://www.twitter.com" class="fa fa-twitter fa-fw"></a>
+  <a href="http://www.facebook.com" class="fa fa-facebook fa-fw"></a>
+  <a href="http://www.instagram.com" class="fa fa-instagram fa-fw"></a>
+  <a href="http:web.whatsapp.com" class="fa fa-whatsapp fa-fw"></a>
+</footer>
+</body>
+</html>

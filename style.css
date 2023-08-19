@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: #fdf5e6;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  text-align: center
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://www.w3schools.com/w3images/coffeehouse.jpg);
+  height: 400px;
+}
+
+img {
+  vertical-align: middle;
+  width:100%;
+}
+
+button,input {
+  font: inherit;
+  margin: 0;
+  overflow: visible
+}
+
+a {
+  color: inherit
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.button:hover {
+  color: #000000;
+  background-color: #73c1cb
+}
+
+footer {
+  color: #000000;
+  background-color: #bccfd2;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ff914d;
+  width: 100%
+}
+
+.sidebar {
+  height: 100%;
+  width: 120px;
+  background-color: #73c1cb;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  font-size: 12px;
+  text-align: center
+}
+
+.contenido {
+  margin-left: 30%;
+  margin-right: auto;
+  max-width:50%
+}
+
+.fa {
+  font-size: 28px!important
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Zeyada", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: #ff914d
+}

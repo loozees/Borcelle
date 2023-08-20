@@ -83,9 +83,9 @@ input {
 }
 
 .fa {
-  font-size: 28px!important <!-- Esto es importante porque sino hereda el que viene de FontAwesome, que es como 12px y se ve re chiquito. Con poner la nota de IMPORTANT esta "supera" a la configuración de FA. -->
+  font-size: 28px!important
 }
-<!-- Originalmente iba a haber otros tamaños de título pero al final me quedé con este y por eso dice H5, le hubiera cambiado el nombre para evitar confusión, más que nada porque establecí un tamaño y todo, podría haber sido clase TITLE al fin y al cabo. -->
+
 h5 {
   font-family: "Zeyada", sans-serif;
   font-size: 48px;

@@ -5,6 +5,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+logo {
+  background-color: #ffffff;
+}
+
 header {
   background-position: center;
   background-size: cover;

@@ -1,9 +1,11 @@
+/* Esta es la manera de comentar en el CSS. No se utiliza la forma de comentar del HTML. */
+/* Dentro del BODY ponemos lo que queremos que se repita en la página en general, en este caso si habrá un margen mayor, la fuente a usar para todo lo que no tenga fuente definida, y el color de fondo. */
 body {
   margin: 0;
   background-color: #fdf5e6;
   font-family: "Poppins", sans-serif;
 }
-
+/* Podría haber colocado la imagen en el código de la página, pero siempre es más conveniente aquí. No se referencia con A HREF, sino que con URL (DIRECCIÓN INTERNA/EXTERNA). */
 header {
   background-position: center;
   background-size: cover;
@@ -15,7 +17,7 @@ img {
   vertical-align: middle;
   width:100%;
 }
-
+/* La propiedad INHERIT se asegura que va a tener la característica general configurada para la página (en este caso la fuente Poppins), pero muchas veces no es necesario colocar esta propiedad. */
 button,input {
   font: inherit;
   margin: 0;
@@ -78,7 +80,8 @@ input {
   margin-right: auto;
   max-width:50%
 }
-
+/* Se utiliza !IMPORTANT cuando queremos que "supere" algo de la fuente maestra. En nuestro caso, como los FA vienen con configuración de FontAwesome, necesitamos darle importancia sin falta al tamaño que queremos nosotros y no el que viene de fábrica. */
+/* Utilizo REM en lugar de PX como medida porque así se adapta al tamaño de letra que tenga el browser de la persona que mire la página. Es una medida menos estática. 1REM equivale al tamaño de letra base del navegador, que es aprox. 16px. */
 .fa {
   font-size: 2rem!important
 }

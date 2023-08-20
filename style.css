@@ -30,7 +30,7 @@ a {
   border: none;
   display: inline-block;
   width: 120px;
-  padding: 0px 16px;
+  padding: 16px 0px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
@@ -85,6 +85,7 @@ input {
 
 h5 {
   font-family: "Zeyada", sans-serif;
+  font-size: 5%;
   text-align: center;
   color: #ff914d
 }

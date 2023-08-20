@@ -80,12 +80,12 @@ input {
 }
 
 .fa {
-  font-size: 28px!important
+  font-size: 2rem!important
 }
 
 h5 {
   font-family: "Zeyada", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   color: #ff914d
 }

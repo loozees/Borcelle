@@ -40,14 +40,14 @@
       </div>
     </div>
         <!-- Slideshow container -->
-    <div class="galeria">
-      <div class="slide fade">
+    <div class="slideshow">
+      <div class="mySlides fade">
         <img src="img/galeria1.jpg">
       </div>
-      <div class="slide fade">
+      <div class="mySlides fade">
         <img src="img/galeria2.jpg">
       </div>
-      <div class="slide fade">
+      <div class="mySlides fade">
         <img src="img/galeria3.jpg">
       </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -78,7 +78,7 @@
 
       function showSlides() {
         let i;
-        let slides = document.getElementsByClassName("slide");
+        let slides = document.getElementsByClassName("mySlides");
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }

@@ -93,11 +93,9 @@ h5 {
   color: #ff914d
 }
 
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .galeria {
-  position: relative;
+  position: auto;
   margin: 0;
 }
 

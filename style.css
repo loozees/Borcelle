@@ -94,13 +94,13 @@ h5 {
 }
 
 /* Slideshow container */
-.galeria {
+.slideshow {
   max-width: 25%;
   position: auto;
   margin: auto;
 }
 
-.slide {
+.mySlides {
   display: none;
 }
 

@@ -95,16 +95,15 @@ h5 {
 
 /* Slideshow container */
 .galeria {
+  max-width: 25%;
   position: auto;
   margin: auto;
 }
 
-/* Hide the images by default */
 .slide {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -120,7 +119,6 @@ h5 {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -130,7 +128,6 @@ h5 {
   background-color: #bccfd2;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;

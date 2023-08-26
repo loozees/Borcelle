@@ -96,7 +96,7 @@ h5 {
 /* Slideshow container */
 .galeria {
   position: auto;
-  margin: 0;
+  margin: auto;
 }
 
 /* Hide the images by default */

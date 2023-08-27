@@ -39,16 +39,16 @@
         <p><strong>Dirección:</strong> Avenida Pastelera 1245, CABA</p>
       </div>
     </div>
-    <!-- Slideshow container -->
+    <!-- Aquí vamos a colocar una galería que corra automáticamente con JS. En este caso, su propósito es servir de separador entre el contenido principal y la sección de contacto. -->
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="img/galeria1.jpg" style="width:50%">
+        <img src="img/galeria1.jpg" style="width:100%">
       </div>
       <div class="mySlides fade">
-        <img src="img/galeria2.jpg" style="width:50%">
+        <img src="img/galeria2.jpg" style="width:100%">
       </div>
       <div class="mySlides fade">
-        <img src="img/galeria3.jpg" style="width:50%">
+        <img src="img/galeria3.jpg" style="width:100%">
       </div>
     </div>
     <br>
@@ -77,6 +77,7 @@
       <a href="http://web.whatsapp.com" class="fa fa-whatsapp fa-fw"></a>
     </footer>
     <script>
+      // Aquí coloqué el código JS de la galería o slideshow. La función simplemente evoca las imágenes y las muestra en un tiempo determinado.
       let slideIndex = 0;
       showSlides();
       
@@ -89,7 +90,7 @@
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}
         slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        setTimeout(showSlides, 6000); // Esto hace que la imagen cambie cada 6 segundos. 1000 = 1seg.
       }
     </script>
   </body>

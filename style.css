@@ -93,10 +93,12 @@ h5 {
   color: #ff914d
 }
 
+* {box-sizing:border-box}
+
 /* Slideshow container */
-.slideshow {
-  max-width: 25%;
-  position: auto;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
   margin: auto;
 }
 
@@ -125,6 +127,21 @@ h5 {
 }
 
 .prev:hover, .next:hover {
+  background-color: #bccfd2;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #73c1cb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
   background-color: #bccfd2;
 }
 

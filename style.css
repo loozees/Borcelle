@@ -93,6 +93,11 @@ h5 {
   color: #ff914d
 }
 
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
 .mySlides {
   display: none;
 }

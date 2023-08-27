@@ -75,7 +75,7 @@ input {
   text-align: center
 }
 
-.contenido, .slideshow-container {
+.contenido, .slideshow-container, .mySlides {
   margin-left: 30%;
   margin-right: auto;
   max-width:50%

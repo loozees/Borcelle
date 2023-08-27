@@ -75,7 +75,7 @@ input {
   text-align: center
 }
 
-.contenido, .slideshow-container, .mySlides {
+.contenido {
   margin-left: 30%;
   margin-right: auto;
   max-width:50%
@@ -91,6 +91,11 @@ h5 {
   font-size: 3rem;
   text-align: center;
   color: #ff914d
+}
+
+.slideshow-container, .mySlides {
+  margin-left: 30%;
+  margin-right: auto;
 }
 
 .mySlides {
